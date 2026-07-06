@@ -1,0 +1,154 @@
+/* ============================================
+   SETUVIO - CSS Variables & Design Tokens
+   ============================================ */
+
+:root {
+  /* Primary Colors (Vibrant Orange from Logo) */
+  --primary: #FC6B33;
+  --primary-dark: #E05018;
+  --primary-light: #FD8D60;
+  --primary-rgb: 252, 107, 51;
+  
+  /* Secondary Colors (Optional Accent) */
+  --secondary: #3B82F6;
+  --secondary-dark: #2563EB;
+  --secondary-light: #60A5FA;
+  --secondary-rgb: 59, 130, 246;
+  
+  /* Accent Colors */
+  --accent: #Fcd34d;
+  --accent-dark: #F59E0B;
+  --accent-light: #Fde68a;
+  --accent-rgb: 252, 211, 77;
+  
+  /* Background Colors (Premium Sleek Dark) */
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #F1F5F9;
+  --bg-dark: #0B1120;
+  --bg-dark-secondary: #111827;
+  --bg-card: #FFFFFF;
+  
+  /* Glass Colors */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(252, 107, 51, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-light: #6B7280;
+  --text-white: #FFFFFF;
+  --text-muted: #9CA3AF;
+  
+  /* Success Colors */
+  --success: #10B981;
+  --success-dark: #059669;
+  --success-light: #34D399;
+  
+  /* Warning Colors */
+  --warning: #F59E0B;
+  --error: #EF4444;
+  
+  /* Gradients (Changed to Solid Colors per user request) */
+  --gradient-primary: var(--primary);
+  --gradient-secondary: var(--secondary);
+  --gradient-accent: var(--accent);
+  --gradient-full: var(--primary);
+  --gradient-dark: var(--bg-dark);
+  --gradient-glow: rgba(252, 107, 51, 0.15);
+  
+  /* Typography */
+  --font-primary: 'Space Grotesk', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.3);
+  --shadow-glow-secondary: 0 0 40px rgba(6, 182, 212, 0.3);
+  --shadow-glow-accent: 0 0 40px rgba(124, 58, 237, 0.3);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-extra-slow: 600ms cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Z-Index Scale */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1440px;
+  --container-full: 100%;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-primary: #0B1120;
+  --bg-secondary: #111827;
+  --bg-card: #1E293B;
+  --text-primary: #F8FAFC;
+  --text-secondary: #E2E8F0;
+  --text-light: #94A3B8;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(252, 107, 51, 0.2);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+    --transition-extra-slow: 0ms;
+  }
+}

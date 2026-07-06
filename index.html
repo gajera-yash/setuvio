@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- ===== META ===== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Setuvio - Building Digital Bridges to the Future. Premium web development, mobile apps, AI solutions, and digital transformation services.">
+  <meta name="keywords" content="Setuvio, web development, mobile apps, AI, software development, digital transformation, UI/UX design">
+  <meta name="author" content="Setuvio">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://setuvio.com/">
+
+  <!-- ===== OPEN GRAPH ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Setuvio - Building Digital Bridges to the Future">
+  <meta property="og:description" content="Premium technology company specializing in web development, mobile apps, AI solutions, and digital transformation.">
+  <meta property="og:url" content="https://setuvio.com/">
+  <meta property="og:site_name" content="Setuvio">
+  <meta property="og:image" content="https://setuvio.com/assets/images/og-image.jpg">
+
+  <!-- ===== TWITTER ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Setuvio - Building Digital Bridges to the Future">
+  <meta name="twitter:description" content="Premium technology company specializing in web development, mobile apps, AI solutions, and digital transformation.">
+  <meta name="twitter:image" content="https://setuvio.com/assets/images/og-image.jpg">
+
+  <!-- ===== SCHEMA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Setuvio",
+    "url": "https://setuvio.com",
+    "logo": "https://setuvio.com/assets/images/logo.png",
+    "description": "Building Digital Bridges to the Future",
+    "foundingDate": "2020",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-234-567-8900",
+      "contactType": "sales",
+      "email": "hello@setuvio.com"
+    },
+    "sameAs": [
+      "https://twitter.com/setuvio",
+      "https://linkedin.com/company/setuvio",
+      "https://github.com/setuvio"
+    ]
+  }
+  </script>
+
+  <!-- ===== FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ===== STYLES ===== -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <title>Setuvio - Building Digital Bridges to the Future</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise-overlay"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/setuvio_logo.svg" alt="Setuvio Logo" class="logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="theme-toggle search-trigger" aria-label="Search" style="font-size:1rem">🔍</button>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+        <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="industries.html">Industries</a>
+    <a href="technologies.html">Technologies</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== SEARCH MODAL ===== -->
+  <div class="search-modal" role="dialog" aria-label="Search">
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <span>🔍</span>
+        <input type="text" placeholder="Search pages..." aria-label="Search input">
+        <button class="search-modal-close" aria-label="Close search">✕</button>
+      </div>
+      <div class="search-modal-body">
+        <div style="text-align:center;padding:2rem;color:var(--text-light)">
+          Start typing to search pages...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <!-- Background -->
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text reveal">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Now accepting new projects
+          </div>
+          <h1 class="hero-title">
+            Building Digital<br>
+            <span class="gradient-text">Bridges</span> to the<br>
+            Future
+          </h1>
+          <p class="hero-description">
+            We craft premium digital experiences that transform businesses. 
+            From web development to AI solutions, we bring your vision to life.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg btn-ripple">Start Your Project →</a>
+            <a href="portfolio.html" class="btn btn-outline btn-lg">View Our Work</a>
+          </div>
+          <!-- Stats row below buttons -->
+          <div class="hero-stats-row">
+            <div class="hero-stat">
+              <span class="hero-stat-number"><span class="counter-number" data-target="150">0</span>+</span>
+              <span class="hero-stat-label">Projects</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-number"><span class="counter-number" data-target="50">0</span>+</span>
+              <span class="hero-stat-label">Clients</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-number"><span class="counter-number" data-target="5">0</span>+</span>
+              <span class="hero-stat-label">Years</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal-right">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-card-dots">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="hero-card-body">
+              <div class="hero-card-code">
+                <span class="hero-code-line"><span class="hero-code-keyword">import</span> { <span class="hero-code-string">Setuvio</span> } <span class="hero-code-keyword">from</span> <span class="hero-code-string">'@future'</span>;</span>
+                <span class="hero-code-line"><span class="hero-code-keyword">const</span> <span class="hero-code-var">solution</span> = <span class="hero-code-keyword">await</span> <span class="hero-code-fn">Setuvio</span>.<span class="hero-code-fn">build</span>({</span>
+                <span class="hero-code-line">  <span class="hero-code-prop">vision</span>: <span class="hero-code-string">"Your Digital Future"</span>,</span>
+                <span class="hero-code-line">  <span class="hero-code-prop">impact</span>: <span class="hero-code-keyword">true</span></span>
+                <span class="hero-code-line">});</span>
+                <span class="hero-code-line"><span class="hero-code-comment">// ✅ Built with excellence</span></span>
+              </div>
+              <div class="hero-card-footer">
+                <div class="hero-card-user">
+                  <div class="hero-card-avatar">S</div>
+                  <div>
+                    <div class="hero-card-name">Setuvio Team</div>
+                    <div class="hero-card-status">
+                      <span class="hero-card-status-dot"></span>
+                      Ready to build
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-card-stats">
+                  <div class="hero-card-stat">
+                    <span class="hero-card-stat-value"><span class="counter-number" data-target="98">0</span>%</span>
+                    <span class="hero-card-stat-label">Success</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== TRUSTED BY - Marquee Slider ===== -->
+  <section class="trusted-section">
+    <div class="container">
+      <p class="trusted-label">Trusted by industry leaders</p>
+      <div class="trusted-marquee">
+        <div class="trusted-track">
+          <span class="trusted-item">TechCorp</span>
+          <span class="trusted-item">InnovateLab</span>
+          <span class="trusted-item">DataFlow</span>
+          <span class="trusted-item">CloudNine</span>
+          <span class="trusted-item">NexGen</span>
+          <span class="trusted-item">AlphaAI</span>
+          <span class="trusted-item">TechCorp</span>
+          <span class="trusted-item">InnovateLab</span>
+          <span class="trusted-item">DataFlow</span>
+          <span class="trusted-item">CloudNine</span>
+          <span class="trusted-item">NexGen</span>
+          <span class="trusted-item">AlphaAI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES OVERVIEW ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Comprehensive Digital Solutions</h2>
+        <p class="section-subtitle">From concept to launch, we provide end-to-end services that drive digital transformation and business growth.</p>
+      </div>
+      <div class="services-grid stagger-children reveal">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Custom websites and web applications built with cutting-edge technologies for optimal performance.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Mobile Apps</h3>
+          <p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>AI Solutions</h3>
+          <p>Intelligent automation and machine learning solutions that transform your business operations.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces designed with user-centered principles and modern aesthetics.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud Solutions</h3>
+          <p>Scalable cloud infrastructure and DevOps solutions for modern, resilient applications.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔗</div>
+          <h3>API Development</h3>
+          <p>Robust, secure, and well-documented APIs that power your digital ecosystem.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Business Automation</h3>
+          <p>Streamline operations with custom automation solutions that save time and reduce costs.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>IT Consulting</h3>
+          <p>Strategic technology consulting to help you make informed decisions and achieve your goals.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid stagger-children reveal">
+        <div class="stat-item">
+          <span class="number"><span class="counter-number" data-target="150">0</span>+</span>
+          <span class="label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="number"><span class="counter-number" data-target="50">0</span>+</span>
+          <span class="label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="number"><span class="counter-number" data-target="98">0</span>%</span>
+          <span class="label">Client Satisfaction</span>
+        </div>
+        <div class="stat-item">
+          <span class="number"><span class="counter-number" data-target="24">0</span>/7</span>
+          <span class="label">Support Available</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT PREVIEW ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-preview">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team Collaboration">
+          </div>
+          <div class="about-experience-badge">
+            <span class="number">5+</span>
+            <span class="label">Years of Innovation</span>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title" style="font-size:var(--text-3xl)">We Build Technology That Connects and Empowers</h2>
+          <p style="color:var(--text-light);line-height:1.7;margin-bottom:var(--space-xl)">
+            At Setuvio, we're passionate about creating digital solutions that make a real difference. 
+            Our team of expert developers, designers, and strategists work together to deliver 
+            innovative technology that drives business growth and transforms industries.
+          </p>
+          <div class="about-list">
+            <div class="about-list-item">
+              <span class="check">✓</span>
+              <span>5+ years of industry experience</span>
+            </div>
+            <div class="about-list-item">
+              <span class="check">✓</span>
+              <span>150+ successful projects delivered</span>
+            </div>
+            <div class="about-list-item">
+              <span class="check">✓</span>
+              <span>Expert team of 50+ professionals</span>
+            </div>
+            <div class="about-list-item">
+              <span class="check">✓</span>
+              <span>24/7 client support & maintenance</span>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-primary mt-2">Learn More About Us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="section" style="background:var(--bg-secondary)" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Products</span>
+        <h2 class="section-title">Innovative Software Solutions</h2>
+        <p class="section-subtitle">Discover our suite of powerful products designed to solve real-world challenges.</p>
+      </div>
+      <div class="products-grid stagger-children reveal">
+        <div class="product-card" data-category="ai">
+          <div class="product-card-image">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="AI Business Tools">
+          </div>
+          <div class="product-card-body">
+            <h3>AI Business Tools</h3>
+            <p>Intelligent automation tools powered by advanced machine learning algorithms.</p>
+            <div class="product-card-tags">
+              <span class="product-tag">AI</span>
+              <span class="product-tag">Automation</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="education">
+          <div class="product-card-image">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="School ERP System">
+          </div>
+          <div class="product-card-body">
+            <h3>School ERP System</h3>
+            <p>Comprehensive school management platform for educational institutions.</p>
+            <div class="product-card-tags">
+              <span class="product-tag">Education</span>
+              <span class="product-tag">ERP</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="hr">
+          <div class="product-card-image">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=600&q=80" alt="HR Management">
+          </div>
+          <div class="product-card-body">
+            <h3>HR Management</h3>
+            <p>Complete HR management solution for modern organizations.</p>
+            <div class="product-card-tags">
+              <span class="product-tag">HR</span>
+              <span class="product-tag">Management</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="crm">
+          <div class="product-card-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="CRM Platform">
+          </div>
+          <div class="product-card-body">
+            <h3>CRM Platform</h3>
+            <p>Powerful customer relationship management system for sales teams.</p>
+            <div class="product-card-tags">
+              <span class="product-tag">CRM</span>
+              <span class="product-tag">Sales</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="ai">
+          <div class="product-card-image">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="AI Image Tools">
+          </div>
+          <div class="product-card-body">
+            <h3>AI Image Tools</h3>
+            <p>Advanced AI-powered image generation and editing tools.</p>
+            <div class="product-card-tags">
+              <span class="product-tag">AI</span>
+              <span class="product-tag">Image</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card" data-category="security">
+          <div class="product-card-image">
+            <img src="https://images.unsplash.com/photo-1510511459019-5efa7ae5ca6c?auto=format&fit=crop&w=600&q=80" alt="Attendance System">
+          </div>
+          <div class="product-card-body">
+            <h3>Attendance System</h3>
+            <p>Smart attendance tracking with facial recognition and reporting.</p>
+            <div class="product-card-tags">
+              <span class="product-tag">Security</span>
+              <span class="product-tag">AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3 reveal">
+        <a href="products.html" class="btn btn-primary">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">What Makes Setuvio Different</h2>
+        <p class="section-subtitle">We combine technical excellence with creative vision to deliver exceptional results.</p>
+      </div>
+      <div class="features-grid stagger-children reveal">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>Optimized performance with cutting-edge technologies for blazing-fast applications.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Pixel Perfect</h3>
+          <p>Meticulous attention to detail ensuring every pixel is in its perfect place.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure & Reliable</h3>
+          <p>Enterprise-grade security measures to protect your data and applications.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Fully Responsive</h3>
+          <p>Seamless experiences across all devices and screen sizes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Client-First</h3>
+          <p>Your success is our priority with dedicated support and transparent communication.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Future-Ready</h3>
+          <p>Scalable solutions built with modern architectures ready for tomorrow's challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title" style="color:var(--text-white)">What Our Clients Say</h2>
+        <p class="section-subtitle">Hear from the businesses we've helped transform.</p>
+      </div>
+      <div class="testimonials-masonry reveal">
+        <div class="testimonial-card featured">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Setuvio transformed our digital presence completely. Their team's expertise in web development and UI/UX design is outstanding. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <img class="avatar-img" src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Davis">
+            <div>
+              <h4>John Davis</h4>
+              <p>CEO, TechCorp</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Working with Setuvio was an incredible experience. They delivered our mobile app on time and exceeded our expectations."</p>
+            <div class="testimonial-author">
+              <img class="avatar-img" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mitchell">
+              <div>
+                <h4>Sarah Mitchell</h4>
+                <p>CTO, InnovateLab</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The AI solution Setuvio built for us revolutionized our operations. We've seen a 40% increase in efficiency."</p>
+            <div class="testimonial-author">
+              <img class="avatar-img" src="https://randomuser.me/api/portraits/men/85.jpg" alt="Alex Kim">
+              <div>
+                <h4>Alex Kim</h4>
+                <p>Founder, DataFlow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Exceptional quality and attention to detail. Setuvio's team understood our vision perfectly."</p>
+            <div class="testimonial-author">
+              <img class="avatar-img" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Roberts">
+              <div>
+                <h4>Emily Roberts</h4>
+                <p>Director, CloudNine</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"From concept to launch, Setuvio was with us every step of the way. Their SaaS development expertise is world-class."</p>
+            <div class="testimonial-author">
+              <img class="avatar-img" src="https://randomuser.me/api/portraits/men/22.jpg" alt="Michael Park">
+              <div>
+                <h4>Michael Park</h4>
+                <p>CEO, NexGen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECHNOLOGY STACK ===== -->
+  <section class="section tech-stack-section" id="technologies">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Technology Stack</span>
+        <h2 class="section-title">Built With Modern Technologies</h2>
+        <p class="section-subtitle">We leverage the latest technologies to build robust, scalable solutions.</p>
+      </div>
+      <div class="tech-badges stagger-children reveal">
+        <span class="tech-badge">HTML5</span>
+        <span class="tech-badge">CSS3</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">React</span>
+        <span class="tech-badge">Next.js</span>
+        <span class="tech-badge">Node.js</span>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">PHP</span>
+        <span class="tech-badge">Laravel</span>
+        <span class="tech-badge">Flutter</span>
+        <span class="tech-badge">Firebase</span>
+        <span class="tech-badge">MySQL</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">AWS</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">AI/ML</span>
+        <span class="tech-badge">GraphQL</span>
+        <span class="tech-badge">REST APIs</span>
+        <span class="tech-badge">OpenAI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section class="section" id="industries">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Industries</span>
+        <h2 class="section-title">Serving Diverse Industries</h2>
+        <p class="section-subtitle">We bring our expertise across multiple sectors to deliver tailored solutions.</p>
+      </div>
+      <div class="industries-grid stagger-children reveal">
+        <div class="industry-card"><div class="icon">🏥</div><h3>Healthcare</h3></div>
+        <div class="industry-card"><div class="icon">🎓</div><h3>Education</h3></div>
+        <div class="industry-card"><div class="icon">💰</div><h3>Finance</h3></div>
+        <div class="industry-card"><div class="icon">🛍️</div><h3>Retail</h3></div>
+        <div class="industry-card"><div class="icon">🏭</div><h3>Manufacturing</h3></div>
+        <div class="industry-card"><div class="icon">🏛️</div><h3>Government</h3></div>
+        <div class="industry-card"><div class="icon">🏠</div><h3>Real Estate</h3></div>
+        <div class="industry-card"><div class="icon">✈️</div><h3>Travel</h3></div>
+        <div class="industry-card"><div class="icon">🚚</div><h3>Logistics</h3></div>
+        <div class="industry-card"><div class="icon">🏗️</div><h3>Construction</h3></div>
+        <div class="industry-card"><div class="icon">🏨</div><h3>Hospitality</h3></div>
+        <div class="industry-card"><div class="icon">🚀</div><h3>Startups</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEVELOPMENT PROCESS ===== -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Process</span>
+        <h2 class="section-title" style="color:var(--text-white)">How We Bring Ideas to Life</h2>
+        <p class="section-subtitle">A proven methodology that ensures successful project delivery.</p>
+      </div>
+      <div class="process-glow-tree reveal">
+        <div class="process-hub">
+          <div class="hub-ring ring-1"></div>
+          <div class="hub-ring ring-2"></div>
+          <div class="hub-ring ring-3"></div>
+          <div class="hub-core"></div>
+        </div>
+        <div class="process-spine">
+          <div class="spark spark-1"></div>
+          <div class="spark spark-2"></div>
+          <div class="spark spark-3"></div>
+        </div>
+        <div class="process-branches">
+          <div class="process-branch left-branch">
+            <div class="branch-spark"></div>
+            <div class="branch-card">
+              <h3 class="gradient-text-orange">Discovery</h3>
+              <p>Understanding your vision, goals, and requirements in depth.</p>
+            </div>
+          </div>
+          <div class="process-branch right-branch">
+            <div class="branch-spark"></div>
+            <div class="branch-card">
+              <h3 class="gradient-text-orange">Strategy</h3>
+              <p>Creating a comprehensive plan and architecture for your project.</p>
+            </div>
+          </div>
+          <div class="process-branch left-branch">
+            <div class="branch-spark"></div>
+            <div class="branch-card">
+              <h3 class="gradient-text-orange">Design</h3>
+              <p>Crafting beautiful, intuitive interfaces and user experiences.</p>
+            </div>
+          </div>
+          <div class="process-branch right-branch">
+            <div class="branch-spark"></div>
+            <div class="branch-card">
+              <h3 class="gradient-text-orange">Development</h3>
+              <p>Building your solution with clean, efficient, and scalable code.</p>
+            </div>
+          </div>
+          <div class="process-branch left-branch">
+            <div class="branch-spark"></div>
+            <div class="branch-card">
+              <h3 class="gradient-text-orange">Testing</h3>
+              <p>Rigorous quality assurance to ensure flawless performance.</p>
+            </div>
+          </div>
+          <div class="process-branch right-branch">
+            <div class="branch-spark"></div>
+            <div class="branch-card">
+              <h3 class="gradient-text-orange">Launch</h3>
+              <p>Deploying your solution and providing ongoing support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about working with Setuvio.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What services does Setuvio offer?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We offer a comprehensive range of digital services including web development, mobile app development, AI solutions, UI/UX design, cloud solutions, business automation, API development, and IT consulting. Our team has expertise across multiple technologies and industries.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does a typical project take?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Project timelines vary depending on complexity and scope. A typical website project takes 4-8 weeks, while more complex applications can take 3-6 months. We provide detailed timelines during our discovery phase.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is your development process?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Our process follows six key phases: Discovery, Strategy, Design, Development, Testing, and Launch. We maintain transparent communication throughout and provide regular updates on project progress.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you provide post-launch support?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we offer comprehensive maintenance and support packages to ensure your solution continues to perform optimally. Our support team is available 24/7 for critical issues.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How much does a project cost?</span>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Project costs vary based on requirements, complexity, and scope. We provide detailed quotes after our initial consultation. Contact us for a free, no-obligation estimate for your project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-section" id="cta">
+    <div class="cta-bg"></div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Ready to Build Something Amazing?</h2>
+        <p>Let's discuss your project and create something extraordinary together. Get in touch with our team today.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project →</a>
+          <a href="pricing.html" class="btn btn-outline btn-lg">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG PREVIEW ===== -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Blog</span>
+        <h2 class="section-title">Latest Insights & Updates</h2>
+        <p class="section-subtitle">Stay informed with the latest trends in technology, development, and digital innovation.</p>
+      </div>
+      <div class="blog-grid stagger-children reveal">
+        <div class="blog-card">
+          <div class="blog-card-image"><img src="assets/images/workstation.png" alt="Blog" style="width:100%;height:100%;object-fit:cover;border-radius:inherit"></div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="category">Technology</span>
+              <span>5 min read</span>
+            </div>
+            <h3>The Future of AI in Business Automation</h3>
+            <p>Explore how artificial intelligence is transforming business operations and creating new opportunities.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image"><img src="assets/images/workstation.png" alt="Blog" style="width:100%;height:100%;object-fit:cover;border-radius:inherit"></div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="category">Development</span>
+              <span>7 min read</span>
+            </div>
+            <h3>Building Scalable Web Applications in 2026</h3>
+            <p>Best practices and modern approaches for building web applications that scale.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image"><img src="assets/images/workstation.png" alt="Blog" style="width:100%;height:100%;object-fit:cover;border-radius:inherit"></div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="category">Design</span>
+              <span>4 min read</span>
+            </div>
+            <h3>UI/UX Design Trends Shaping Digital Products</h3>
+            <p>Discover the latest design trends that are defining modern digital experiences.</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3 reveal">
+        <a href="blog.html" class="btn btn-primary">View All Articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content reveal">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest insights, tutorials, and company updates delivered to your inbox.</p>
+        <form class="newsletter-form" style="max-width:500px;margin:0 auto">
+          <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+          <button type="submit">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="nav-brand">
+            <img src="assets/images/setuvio_logo.svg" alt="Setuvio Logo" class="logo-img">
+          </a>
+          <p>Building Digital Bridges to the Future. We create premium digital experiences that transform businesses and drive innovation.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">⌘</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Web Development</a>
+            <a href="services.html">Mobile Apps</a>
+            <a href="services.html">AI Solutions</a>
+            <a href="services.html">UI/UX Design</a>
+            <a href="services.html">Cloud Solutions</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="careers.html">Careers</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <div class="footer-links">
+            <a href="pricing.html">Pricing</a>
+            <a href="industries.html">Industries</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Get the latest updates and insights delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required aria-label="Newsletter email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Setuvio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ===== FLOATING CONTACT ===== -->
+  <div class="floating-contact">
+    <a href="contact.html" class="floating-contact-btn" aria-label="Contact us">💬</a>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
