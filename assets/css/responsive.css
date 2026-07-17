@@ -346,10 +346,6 @@
     grid-template-columns: 1fr;
   }
   
-  .process-steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
   .benefits-grid {
     grid-template-columns: 1fr;
   }
@@ -617,10 +613,6 @@
   .stats-grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
-  }
-  
-  .process-steps {
-    grid-template-columns: 1fr;
   }
   
   .pricing-card {
