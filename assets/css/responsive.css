@@ -131,6 +131,10 @@
     font-size: var(--text-lg);
   }
   
+  .footer-contact-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   .footer-grid {
     grid-template-columns: 2fr 1fr 1fr;
     gap: var(--space-2xl);
@@ -326,6 +330,10 @@
   }
   
   .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-contact-row {
     grid-template-columns: 1fr;
   }
   
