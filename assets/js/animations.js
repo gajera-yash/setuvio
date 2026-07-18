@@ -10,6 +10,7 @@ const Animations = {
     this.setupRippleEffect();
     this.setupScrollProgress();
     this.setupPageTransition();
+    this.setup3DScroll();
   },
 
   /* ========== Scroll Reveal Animations ========== */
@@ -157,6 +158,59 @@ const Animations = {
         }
       });
     });
+  },
+
+  /* ========== 3D Scroll Effect ========== */
+  setup3DScroll() {
+    const cards = document.querySelectorAll('.service-card, .portfolio-item, .product-card, .hero-center-content');
+    
+    if (!cards.length) return;
+
+    // Add perspective to parent containers for 3D effect
+    cards.forEach(card => {
+      if (card.parentElement) {
+        card.parentElement.style.perspective = '1200px';
+        card.parentElement.style.transformStyle = 'preserve-3d';
+      }
+    });
+
+    // Update transforms on scroll
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollY = window.pageYOffset;
+          const windowHeight = window.innerHeight;
+
+          cards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            // Only process if in or near viewport
+            if (rect.top < windowHeight + 100 && rect.bottom > -100) {
+              const cardCenter = rect.top + rect.height / 2;
+              const screenCenter = windowHeight / 2;
+              
+              // Calculate distance from center of screen (-1 to 1)
+              const distance = (cardCenter - screenCenter) / screenCenter;
+              
+              // Convert distance to rotation angle (max 12 degrees)
+              const rotateX = distance * 12;
+              
+              // Apply a slight translateY based on rotation to enhance 3D feel
+              const translateY = distance * 20;
+              
+              // Subtle scale effect (slightly smaller at edges)
+              const scale = 1 - Math.abs(distance) * 0.03;
+
+              card.style.transform = `rotateX(${rotateX}deg) translateY(${translateY}px) scale(${scale})`;
+              card.style.transition = 'transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+              card.style.willChange = 'transform';
+            }
+          });
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
   }
 };
 

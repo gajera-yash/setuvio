@@ -538,12 +538,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-  background: #4f46e5; /* Update to match the image purple blue */
+  background: var(--primary); /* Logo Orange */
   color: white;
 }
 
 .btn-primary:hover {
-  background: #4338ca;
+  background: var(--primary-dark);
 }
 
 /* Floating Elements */
